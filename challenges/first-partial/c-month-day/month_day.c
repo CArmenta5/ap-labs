@@ -1,10 +1,7 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
 
-
-// CAMBIAR LIBRERIAS NO USADAS!!!!!!!!!!!!!!
 // Chear año 
 static char daytab[2][12] = {
     { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
