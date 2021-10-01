@@ -33,10 +33,13 @@ int mystrfind(char *origin, char *substr){
     for(i = 0; origin[i] != '\0'; i++){
         prev = i;
         for(j = 0; substr[j] != '\0'; j++){
-            if (origin[i] == substr[j] && origin[i] != '\0' && substr[j] != '\0'){
+            if (origin[i] == substr[j] && origin[i] != '\0'){
                 i++;
-            }else{
-                i = prev + j;
+            }
+            else{
+                if(j>0){
+                    i--;
+                }
                 break;
             }
         }
