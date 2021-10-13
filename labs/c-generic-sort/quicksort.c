@@ -19,6 +19,8 @@ void quicksort(void *v[], int left, int right,
 
 void swap(void *v[], int i, int j)
 {
+    //printf("%d - %d\n",i,j);
+
     void *temp;
     temp = v[i];
     v[i] = v[j];
