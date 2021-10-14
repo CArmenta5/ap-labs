@@ -4,7 +4,7 @@ void mergesort(void *lineptr[], int left, int right, int (*comp)(void *, void *)
 	if(left < right){
 		int mid = (left + right) / 2;
 		mergesort(lineptr, left, mid, comp);
-		mergesort(lineptr, left, mid, comp);
+		mergesort(lineptr, mid+1, right, comp);
 		merge(lineptr, left, right, comp);
 	}		   
 }
